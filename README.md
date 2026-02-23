@@ -147,14 +147,15 @@ The optimizers were evaluated on standard non-convex test functions:
 ```
 Benchmark-estimation-optimizers/
 │
-├── benchMark-OPTMISER.ipynb
+├── notebooks/
+│   └── benchMark-OPTMISER.ipynb     # Main optimizer benchmarking notebook
+│
 ├── results/
-│   ├── loss-iteration/
-│   └── paths/
-└── README.md
+│   ├── loss-iteration/         # Loss vs iteration plots
+│   └── paths/                  # Optimization trajectory plots
+│
+└── README.md                   # Project documentation
 ```
-
----
 
 
 
