@@ -147,7 +147,7 @@ The optimizers were evaluated on standard non-convex test functions:
 ```
 Benchmark-estimation-optimizers/
 │
-├── benchMark_NAG.ipynb
+├── benchMark-OPTMISER.ipynb
 ├── results/
 │   ├── loss-iteration/
 │   └── paths/
