@@ -51,13 +51,16 @@ NAG improves momentum by computing the gradient at the “look-ahead” position
 Let θ be model parameters and L(θ) be the loss function.
 
 **SGD update:**
+
 θ = θ − η ∇L(θ)
 
 **Momentum update:**
+
 vₜ = γ vₜ₋₁ + η ∇L(θ)  
 θ = θ − vₜ
 
 **Nesterov Accelerated Gradient (NAG):**
+
 vₜ = γ vₜ₋₁ + η ∇L(θ − γ vₜ₋₁)  
 θ = θ − vₜ
 
@@ -117,7 +120,7 @@ The optimizers were evaluated on standard non-convex test functions:
 |------------|-------------|------------------------|------------|-----------|
 | SGD        | Himmelblau  | ~1800                  | Low        | Medium    |
 | Momentum   | Himmelblau  | ~950                   | Lower      | High      |
-| NAG        | Himmelblau  | ~700                   | Lowest     | High      |
+| NAG        | Himmelblau  | ~375                   | Lowest     | High      |
 
 ---
 
@@ -140,13 +143,16 @@ The optimizers were evaluated on standard non-convex test functions:
 ---
 
 ## 📁 Project Structure
+
+```
 Benchmark-estimation-optimizers/
 │
 ├── benchMark_NAG.ipynb
 ├── results/
-│ ├── loss-iteration/
-│ └── paths/
+│   ├── loss-iteration/
+│   └── paths/
 └── README.md
+```
 
 ---
 
